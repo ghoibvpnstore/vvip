@@ -67,9 +67,9 @@ echo -e "$u │ ${g}Info Id Telegram : @MissRose_bot perintah /info      ${NC}"
 echo -e "$u └────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -e -p "  [*] Input your Bot Token : " bottoken
-read -e -p "  [*] Input Your Id Telegram : " admin
+#read -e -p "  [*] Input Your Id Telegram : " admin
 echo -e BOT_TOKEN='"'$bottoken'"' >> /etc/bot/xdxl/var.txt
-echo -e ADMIN='"'$admin'"' >> /etc/bot/xdxl/var.txt
+echo -e ADMIN='"'###'"' >> /etc/bot/xdxl/var.txt
 echo -e DOMAIN='"'$domain'"' >> /etc/bot/xdxl/var.txt
 echo -e PUB='"'$PUB'"' >> /etc/bot/xdxl/var.txt
 echo -e HOST='"'$NS'"' >> /etc/bot/xdxl/var.txt
